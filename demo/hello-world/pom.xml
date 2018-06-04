@@ -22,6 +22,7 @@
 
 <build>
     <plugins>
+      <!-- 由于历史原因，maven的核心插件之一compiler插件默认只支持编译java1.3，因此需要该插件使其支持java5 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -30,6 +31,7 @@
           <target>1.5</target>
         </configuration>
       </plugin>
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
