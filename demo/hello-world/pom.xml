@@ -22,7 +22,11 @@
 
 <build>
     <plugins>
-      <!-- 由于历史原因，maven的核心插件之一compiler插件默认只支持编译java1.3，因此需要该插件使其支持java5 -->
+       <!-- 由于历史原因，maven的核心插件之一compiler插件默认只支持编译java1.3，因此需要该插件使其支持java5 
+        指定maven插件编译版本
+        1：maven：since2.0, 默认用jdk1.3来编译，maven 3.x 貌似是默认用jdk 1.5。 
+        2：windows默认使用GBK编码，java项目经常编码为utf8，也需要在compiler插件中指出，否则中文乱码可能会出现编译错误。 
+      -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
