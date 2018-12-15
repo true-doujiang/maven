@@ -1,3 +1,4 @@
+
 1. maven指定Java版本
   解决办法一：在项目中的pom.xml指定jdk版本，如下：
 	 
