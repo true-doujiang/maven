@@ -1,5 +1,5 @@
 
-1. maven指定Java版本
+一. maven指定Java版本
   解决办法一：在项目中的pom.xml指定jdk版本，如下：
 	 
 	     <properties>
@@ -37,7 +37,7 @@
 	    </profile>
 
 
-2. maven打包过滤指定文件
+二. maven打包过滤指定文件
 
 	<build>
 		<finalName>maven02</finalName>
