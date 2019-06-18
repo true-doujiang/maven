@@ -102,3 +102,6 @@
 	      </plugin>
 	    </plugins>
 	  </build>
+	  
+  四：maven安装本地jar保 
+      命令：mvn install:install-file -Dfile=D:\za-newbee-bill-share-1.0.31.jar -DgroupId=com.zhongan -DartifactId=za-newbee-bill-share -Dversion=1.0.31 -Dpackaging=jar
